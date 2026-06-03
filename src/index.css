@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --polyu-red: #8B0000;
+  --polyu-red-light: #A52A2A;
+  --polyu-red-dark: #5C0000;
+  --bg-warm: #FAFAF8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg-warm);
+  color: #1a1a2e;
+  -webkit-font-smoothing: antialiased;
+}
+
+.polyu-red { color: var(--polyu-red); }
+.bg-polyu { background-color: var(--polyu-red); }
+.border-polyu { border-color: var(--polyu-red); }
+
+.card-hover {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(139,0,0,0.12);
+}
+
+.focus-line {
+  background: #FFFDE7;
+  border-left: 3px solid var(--polyu-red);
+  padding: 6px 12px;
+  margin: 4px 0;
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
+.card-block {
+  background: white;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 8px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  line-height: 1.8;
+}
+
+.gauge-ring {
+  transition: stroke-dashoffset 1s ease-out;
+}
